@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/*Configurações do Layout*/
+body{
+    font-family: 'Quicksand', sans-serif;
+    background: #ececec;
+}
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.icon-bt{cursor: pointer}
+
+md-backdrop.md-opaque {
+    /*opacity: .1;*/
+}
+
+
+/*Estilos do sistema*/
+.v-align-bottom{
+   vertical-align: bottom;
+}
+
+.barraMenu .titulos{
+    flex-basis: 100%;
+}
+.barraMenu .icon-menu{
+    padding-left: 0px;
+    padding-right: 20px;
+}
+.barraMenu .empresa{
+    text-align:  center;
+}
+
+.barraMenu .btUser{
+    text-align: right;
+    cursor: pointer;
+}
+.conteudo{
+   overflow-x: hidden;
+}

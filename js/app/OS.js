@@ -1,0 +1,1 @@
+angular.module('OS', ['ngMaterial', 'material.components.expansionPanels']);

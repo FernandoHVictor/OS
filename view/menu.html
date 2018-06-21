@@ -1,0 +1,39 @@
+<!--
+<md-list ng-controller="menuPrincipalCtrl" ng-cloak>
+    <md-list-item ng-click="null">
+        <p>Teste Menu</p>
+        <i class="material-icons md-dark icon-bt">expand_more</i>
+        <md-list>
+            <md-list-item>
+                <p>SubMenu</p>
+            </md-list-item>
+        </md-list>
+
+    </md-list-item>
+
+    <md-divider ></md-divider>
+    <md-list-item>
+        <p>Teste Menu 2</p>
+    </md-list-item>
+</md-list>-->
+
+<md-list ng-controller="menuPrincipalCtrl" flex>
+   <md-list-item ng-click="toggle.list1 = !toggle.list1">
+    <md-icon>explore</md-icon>
+    <span flex>Item List 1</span>
+    <md-icon ng-show="!toggle.list1">expand_more</md-icon>
+    <md-icon ng-show="toggle.list1">expand_less</md-icon>
+   </md-list-item>
+   <md-list-item ng-repeat="item in data" ng-show="toggle.list1">
+   <span flex-offset="5">{{item}}</span>
+  </md-list-item>
+  <md-list-item ng-click="toggle.list2 = !toggle.list2">
+   <md-icon>explore</md-icon>
+   <span flex>Item List 2</span>
+   <md-icon ng-show="!toggle.list2">expand_more</md-icon>
+   <md-icon ng-show="toggle.list2">expand_less</md-icon>
+  </md-list-item>
+  <md-list-item ng-repeat="item in data" ng-show="toggle.list2">
+   <span flex-offset="5">{{item}}</span>
+  </md-list-item>
+ </md-list>

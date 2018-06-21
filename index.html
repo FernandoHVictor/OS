@@ -1,0 +1,60 @@
+<html  ng-app="OS">
+    <head>
+        <title>OS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-material/angular-material.min.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css" type="text/css"/>
+        <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+        <!--JS-->
+        <script src="js/app/OS.js"></script>
+        
+        <script src="js/config/theme.js"></script>
+        
+        <script src="js/controllers/mainCtrl.js"></script>
+        <script src="js/controllers/menuPrincipalCtrl.js"></script>
+        
+        <script src="js/values/values.js"></script>
+        
+        <script src="js/services/osServices.js"></script>
+        
+    </head>
+    <body>
+        <div ng-controller="mainCtrl">
+            <md-toolbar class="md-hue-2 barraMenu">
+                <div class="md-toolbar-tools">
+                    <md-button class="md-icon-button  icon-menu" aria-label="Settings" ng-disabled="true">
+                        <i class="material-icons md-light icon-bt" ng-click="toggleLeft()">menu</i>
+                    </md-button>
+                    <h2 class="titulos" md-truncate flex>{{dados.nomeSistema}}</h2>
+                    <div class="empresa titulos" md-truncate flex>{{dados.nomeFilial}}</div>
+                    <div class="btUser titulos" md-truncate flex>
+                        <span>Fernando</span>
+                        <i class="material-icons  md-light v-align-bottom">person</i>
+                    </div>    
+                </div>
+            </md-toolbar>
+
+            <md-sidenav class="md-sidenav-left md-hue-2"  md-component-id="left"
+                        md-whiteframe="4">
+                <md-toolbar class="md-hue-2">
+                    <div class="md-toolbar-tools">
+                        <h2 flex md-truncate>Menu</h2>
+                        <i class="material-icons md-light icon-bt" ng-click="toggleLeft()">chevron_left</i>
+                    </div>
+                </md-toolbar>
+                <div ng-include="'view/menu.html'"></div>
+            </md-sidenav>
+            <div class="box">
+                <div flex class="conteudo"></div> 
+            </div>
+        </div>
+    </body>
+
+</html>
