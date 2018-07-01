@@ -1,4 +1,4 @@
-angular.module('OS').controller('mainCtrl', function ($scope, $mdSidenav, osService, $mdToast) {
+angular.module('OSAdmin').controller('mainCtrlAdmin', function ($scope, $mdSidenav, osService, $mdToast) {
     $scope.toggleLeft = sidebarToggler('left');
     carregaDadosPrincipais();
     function sidebarToggler(componentId) {

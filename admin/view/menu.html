@@ -1,4 +1,4 @@
-<md-list ng-controller="menuPrincipalCtrl">
+<md-list ng-controller="menuPrincipalCtrlAdmin">
     <!--se o id vier 0 quer dizer que é sem categoria-->
     <div ng-repeat="item in menu">
         <md-list-item class="menuItem" ng-click="item.aberto = !item.aberto"  ng-if="item.id > 0">

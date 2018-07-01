@@ -1,7 +1,7 @@
-angular.module('OS').controller('menuPrincipalCtrl', function ($scope,osService,$location) {
+angular.module('OSAdmin').controller('menuPrincipalCtrlAdmin', function ($scope,osService,$location) {
   carregaItensMenu();
   function carregaItensMenu() {
-        osService.getMenu().then(function (data) {
+        osService.getMenuAdmin().then(function (data) {
             $scope.menu = data.data;
         }, function (erro) {
             $scope.error = erro.statusText;

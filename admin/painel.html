@@ -1,36 +1,36 @@
 <html>
     <head>
-        <title>Sistema OS</title>
+        <title>Painel de Administrador</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="bower_components/angular/angular.min.js"></script>
-        <script src="bower_components/angular-route/angular-route.min.js"></script>
-        <script src="bower_components/angular-material/angular-material.min.js"></script>
-        <script src="bower_components/angular-aria/angular-aria.min.js"></script>
-        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
-        <script src="bower_components/angular-messages/angular-messages.min.js"></script>
-        <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css" type="text/css"/>
-        <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+        <script src="../bower_components/angular/angular.min.js"></script>
+        <script src="../bower_components/angular-route/angular-route.min.js"></script>
+        <script src="../bower_components/angular-material/angular-material.min.js"></script>
+        <script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="../bower_components/angular-messages/angular-messages.min.js"></script>
+        <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/estilos.css" type="text/css"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
               rel="stylesheet">
         <!--JS-->
-        <script src="js/app/OS.js"></script>
+        <script src="js/app/OSAdmin.js"></script>
 
-        <script src="js/route/rotas.js"></script>
-        <script src="js/interceptors/httpInterceptor.js"></script>
-        <script src="js/interceptors/interceptorsConfig.js"></script>
+        <script src="js/route/rotasAdmin.js"></script>
+        <script src="js/interceptors/httpInterceptorAdmin.js"></script>
+        <script src="js/interceptors/interceptorsConfigAdmin.js"></script>
 
-        <script src="js/controllers/mainCtrl.js"></script>
-        <script src="js/controllers/menuPrincipalCtrl.js"></script>
+        <script src="js/controllers/mainCtrlAdmin.js"></script>
+        <script src="js/controllers/menuPrincipalCtrlAdmin.js"></script>
 
-        <script src="js/values/values.js"></script>
+        <script src="js/values/valuesAdmin.js"></script>
 
-        <script src="js/services/osServices.js"></script>
+        <script src="js/services/osServicesAdmin.js"></script>
 
     </head>
-    <body  ng-app="OS">
+    <body  ng-app="OSAdmin">
     </div>
-    <div ng-controller="mainCtrl">
+    <div ng-controller="mainCtrlAdmin">
         <md-toolbar class="md-hue-2 barraMenu">
             <div class="md-toolbar-tools">
                 <md-button class="md-icon-button  icon-menu" aria-label="Settings" ng-disabled="true">

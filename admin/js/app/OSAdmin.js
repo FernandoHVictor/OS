@@ -1,7 +1,7 @@
 //instancia e configura o módulo
-angular.module('OS', ['ngMaterial','ngRoute'])
+angular.module('OSAdmin', ['ngMaterial','ngRoute'])
 .config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
-    .primaryPalette('light-blue')
+    .primaryPalette('orange')
     .accentPalette('indigo');
 });

@@ -1,9 +1,9 @@
-angular.module("OS").service("osService",function($http,valoresPadrao){
+angular.module("OSAdmin").service("osService",function($http,valoresPadrao){
     this.getDados = function(){
         return  $http.get(valoresPadrao.urlWS + "/dados");
     };
-    this.getMenu = function(){
-        return  $http.get(valoresPadrao.urlWS + "/menu");
+    this.getMenuAdmin = function(){
+        return  $http.get(valoresPadrao.urlWS + "/menuAdmin");
     };
 //    this.addContatos = function(contato){
 //        return  $http.put(listaValues.urlWS + "/contatos",contato);
